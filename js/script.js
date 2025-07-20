@@ -35,6 +35,7 @@ function setLanguage(lang) {
     setStaticText(t);
     renderJobExperience(t.jobs);
     renderEducation(t.education, t);
+    renderPortfolio(t.portfolio);
     
     const tooltipSpan = document.querySelector("#open-to-work-indicator .tooltip-text");
     if (tooltipSpan) {
@@ -109,6 +110,41 @@ function renderEducation(educationList, t) {
         
         container.appendChild(eduDiv);
     });
+}
+
+function renderPortfolio(portfolioList) {
+    const container = document.getElementById("portfolio-entries");
+    container.innerHTML = "";
+
+    for (const entry of Object.values(portfolioList)) {
+        const portEntry = document.createElement("div");
+        portEntry.className = "job";
+
+        portEntry.innerHTML = `
+            <div class="job-header">
+                <a href="${entry.url}" target="_blank" rel="noopener noreferrer" class="logo-link" tabindex="-1">
+                    <img src="images/edu/${entry.image || 'default.png'}" alt="${entry.place}" class="company-logo" />
+                </a>
+                <div class="job-info">
+                    <div class="job-title">
+                        ${entry.place}
+                    </div>
+                </div>
+            </div>
+            <div class="education-details">
+                ${entry.projects.map(p => `
+                    <div style="display: flex; align-items: center; margin-bottom: 0.3em;">
+                        <i class="fas fa-magnifying-glass" style="margin-right: 8px; color: #4a90e2;"></i>
+                        <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="project-link">
+                            ${p.name}
+                        </a>
+                    </div>
+                `).join("")}
+            </div>
+        `;
+
+        container.appendChild(portEntry);
+    }
 }
 
 function addOpenToWorkIndicator() {

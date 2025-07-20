@@ -40,6 +40,23 @@ const translations = {
                 url: "https://www.flf.vu.lt/",
                 image: "vu-logo.png"
             }
+        ],
+        portfolio: [
+            {
+                place: "Vilnius University",
+                url: "https://flf.vu.lt/",
+                image: "vu-logo.png",
+                projects: [
+                    {
+                        name: "Essay #1",
+                        link: "https://example.com/2"
+                    },
+                    {
+                        name: "Essay #2",
+                        link: "https://example.com/2"
+                    }
+                ]
+            }
         ]
     },
 
