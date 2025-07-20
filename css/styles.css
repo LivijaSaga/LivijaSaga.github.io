@@ -246,6 +246,14 @@ ul {
     margin-bottom: 5px;
 }
 
+#portfolio-entries .job-header {
+  align-items: center;
+}
+
+#portfolio-entries .job-title {
+  padding-bottom: 3px;
+}
+
 @media (max-width: 480px) {
     .wrapper {
         padding: 20px 10px;
