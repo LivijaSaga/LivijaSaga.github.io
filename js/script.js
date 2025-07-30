@@ -113,9 +113,16 @@ function renderEducation(educationList, t) {
 }
 
 function renderPortfolio(portfolioList) {
+    const section = document.getElementById("portfolio");
     const container = document.getElementById("portfolio-entries");
-    container.innerHTML = "";
 
+    container.innerHTML = "";
+    if (!portfolioList || Object.keys(portfolioList).length === 0) {
+        section.style.display = "none";
+        return;
+    }
+
+    section.style.display = "";
     for (const entry of Object.values(portfolioList)) {
         const portEntry = document.createElement("div");
         portEntry.className = "job";
@@ -146,6 +153,7 @@ function renderPortfolio(portfolioList) {
         container.appendChild(portEntry);
     }
 }
+
 
 function addOpenToWorkIndicator() {
     const dropdown = document.querySelector(".language-dropdown");
