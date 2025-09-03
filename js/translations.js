@@ -2,7 +2,7 @@ const translations = {
     en: {
         name: "Livija Sagadinaitė",
         aboutTitle: "About me",
-        aboutText: "Hello! I'm Livija. Third-year philology student with a focus on English and German. Passionate about languages, communication, and learning through diverse experiences. Driven, curious, and always ready to contribute wherever I can.",
+        aboutText: "Hello! I'm Livija. I'm a fourth-year philology student with a focus on English and German. I'm passionate about languages, communication, and learning through diverse experiences. I'm pretty driven, curious, and always ready to contribute whatever I can.",
         experienceTitle: "Experience",
         portfolioTitle: "Portfolio",
         contactsTitle: "Let's Connect",
@@ -48,12 +48,8 @@ const translations = {
                 image: "vu-logo.png",
                 projects: [
                     {
-                        name: "Essay #1",
-                        link: "https://example.com/2"
-                    },
-                    {
-                        name: "Essay #2",
-                        link: "https://example.com/2"
+                        name: "Translations",
+                        link: "https://github.com/LivijaSaga/translation-portfolio"
                     }
                 ]
             }
@@ -63,7 +59,7 @@ const translations = {
     lt: {
         name: "Livija Sagadinaitė",
         aboutTitle: "Apie mane",
-        aboutText: "Sveiki! Aš Livija. Trečio kurso filologijos studentė, studijuojanti anglų ir vokiečių kalbas. Domiuosi kalbomis, bendravimu ir mokymusi per įvairią patirtį. Esu motyvuota, smalsi ir visada pasiruošusi prisidėti, kur tik galiu.",
+        aboutText: "Sveiki! Aš Livija. Esu ketvirto kurso filologijos studentė, studijuojanti anglų ir vokiečių kalbas. Domiuosi kalbomis, bendravimu ir siekiu įgyti kuo daugiau įvairios patirties. Esu motyvuota, smalsi ir visada pasiruošusi atiduoti savo viską.",
         experienceTitle: "Patirtis",
         portfolioTitle: "Portfolio",
         contactsTitle: "Kontaktai",
@@ -101,13 +97,26 @@ const translations = {
                 url: "https://www.flf.vu.lt/",
                 image: "vu-logo.png"
             }
+        ],
+        portfolio: [
+            {
+                place: "Vilnius University",
+                url: "https://flf.vu.lt/",
+                image: "vu-logo.png",
+                projects: [
+                    {
+                        name: "Vertimai",
+                        link: "https://github.com/LivijaSaga/translation-portfolio"
+                    }
+                ]
+            }
         ]
     },
 
     de: {
         name: "Livija Sagadinaitė",
         aboutTitle: "Über mich",
-        aboutText: "Hallo! Ich bin Livija. Drittsemester-Philologiestudentin mit Schwerpunkt auf Englisch und Deutsch. Leidenschaftlich an Sprachen, Kommunikation und Lernen durch vielfältige Erfahrungen interessiert. Zielstrebig, neugierig und immer bereit, einen Beitrag zu leisten.",
+        aboutText: "Hallo! Ich bin Livija. Ich bin Studentin im vierten Jahr der Philologie mit den Hauptfächern Englisch und Deutsch. Ich interessiere mich leidenschaftlich für Sprachen, Kommunikation und das Lernen durch vielfältige Erfahrungen. Ich bin ziemlich ehrgeizig, neugierig und immer bereit, meinen Beitrag zu leisten, was ich kann.",
         experienceTitle: "Berufserfahrung",
         portfolioTitle: "Portfolio",
         contactsTitle: "Kontakt aufnehmen",
@@ -145,17 +154,30 @@ const translations = {
                 url: "https://www.flf.vu.lt/",
                 image: "vu-logo.png"
             }
+        ],
+        portfolio: [
+            {
+                place: "Vilnius University",
+                url: "https://flf.vu.lt/",
+                image: "vu-logo.png",
+                projects: [
+                    {
+                        name: "Übersetzungen",
+                        link: "https://github.com/LivijaSaga/translation-portfolio"
+                    }
+                ]
+            }
         ]
     },
 
     ru: {
         name: "Ливия Сагадинайте",
         aboutTitle: "Обо мне",
-        aboutText: "Привет! Я Ливия. Студентка третьего курса филологии, специализация — английский и немецкий языки. Увлечена языками, общением и обучением через разнообразный опыт. Целеустремлённая, любознательная и всегда готова внести свой вклад.",
+        aboutText: "Привет! Я Ливия. Я учусь на четвертом курсе филологического факультета по специальности «Английский и немецкий языки». Я увлечена языками, коммуникацией и обучением через разнообразный опыт. Я довольно целеустремленная, любознательная и всегда готова внести свой вклад в любое дело.",
         experienceTitle: "Опыт работы",
         portfolioTitle: "Портфолио",
         contactsTitle: "Связаться",
-        openToWorkText: "Открыта к работе",
+        openToWorkText: "Открыта для работы",
         educationTitle: "Образование",
         fieldLabel: "Направление",
         levelLabel: "Уровень образования",
@@ -188,6 +210,19 @@ const translations = {
                 date: "2022 – настоящее время",
                 url: "https://www.flf.vu.lt/",
                 image: "vu-logo.png"
+            }
+        ],
+        portfolio: [
+            {
+                place: "Vilnius University",
+                url: "https://flf.vu.lt/",
+                image: "vu-logo.png",
+                projects: [
+                    {
+                        name: "Переводы",
+                        link: "https://github.com/LivijaSaga/translation-portfolio"
+                    }
+                ]
             }
         ]
     }
